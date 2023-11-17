@@ -1,0 +1,236 @@
+.trending__container {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+
+.trending__text {
+    color: #0071E4;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.trending__block_div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.trending__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.trending__block_div_text {
+    color: #0071E4;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.treding__item {
+    max-width: 282px;
+    padding: 16px 8px 24px 8px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
+
+    @media screen and (max-width: 584px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.trending__block_div2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.trending__title {
+    color: #100E0E;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 9px;
+}
+
+.trending__item_img {
+    margin-bottom: 16px;
+}
+
+.trending__block2 {
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trending__block2_text {
+    color: #706E6E;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.trending__block2_div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.trending__block3_text {
+    color: #878787;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration-line: line-through;
+}
+
+.trending__block3_text2 {
+    color: #100E0E;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.trending__block3 {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tranding__btn {
+    padding: 17px 0;
+    width: 100%;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: #0071E4;
+    text-align: center;
+    margin-bottom: 22px;
+
+    &:hover {
+        background-color: #6FD91C;
+
+        &::before {
+            background-image: url(../../img/tranding_btn_hover_icon.svg);
+        }
+    }
+
+    &::before {
+        content: "";
+        top: 30px;
+        width: 24px;
+        height: 24px;
+        background-image: url(../../img/tranding_btn_icon.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        display: inline-block;
+    }
+}
+
+.tranding__block4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tranding__block4_text2 {
+    color: #706E6E;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tranding__block4_text {
+    color: #0071E4;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.trending__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+
+.tranding__block3_btn {
+    max-width: 140px;
+    display: none;
+    padding: 8px;
+    width: 100%;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: #0071E4;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 12px;
+
+    &:hover {
+        background-color: #6FD91C;
+
+        &::after {
+            background-image: url(../../img/tranding_btn_hover_icon.svg);
+        }
+    }
+
+    &::after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-image: url(../../img/tranding_btn_icon.svg);
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+}
+
+.tranding__btn--active {
+    padding: 19px 0;
+    width: 100%;
+    color: #0071E4;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid #0071E4;
+    margin-bottom: 47px;
+}
+
+.trending__block3_text--active {
+    padding-left: 23px;
+    padding-right: 7px;
+    color: #878787;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:768px) {
+    .trending__block3_text2 {
+        display: none;
+    }
+
+    .tranding__btn {
+        display: none;
+    }
+
+    .tranding__block3_btn {
+        display: block;
+    }
+
+    .tranding__btn--active {
+        padding: 14px 0;
+        border: none;
+        background-color: transparent;
+        margin-bottom: 0;
+    }
+}

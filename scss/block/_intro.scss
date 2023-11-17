@@ -1,0 +1,149 @@
+.intro__img {
+    max-width: 398px;
+}
+
+
+.intro__title {
+    color: #1E3240;
+    font-size: 88px;
+    font-weight: 700;
+
+    span {
+        width: 101px;
+        height: 45px;
+        border-radius: 500px;
+        border: 11px solid #1E3240;
+        flex-shrink: 0;
+        display: inline-block;
+    }
+}
+
+.intro__text {
+    color: #1E3240;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 8px;
+
+    span {
+        color: #1E3240;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.intro__btn {
+    max-width: 160px;
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 8px;
+    background: var(--prime, #0071E4);
+    padding: 15px 40px;
+    border: 1px solid #0071E4;
+
+    &:hover {
+        background-color: transparent;
+        color: #0071E4;
+    }
+}
+
+.intro__content {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    justify-content: center;
+}
+
+.intro__container {
+    padding-top: 99px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-image: url(../../img/strelka2.svg);
+        background-position: left center;
+        display: inline-block;
+    }
+
+    &::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-image: url(../../img/strelka.svg);
+        background-position: right center;
+        display: inline-block;
+    }
+}
+
+.intro {
+    background-color: #D0EAFC;
+
+}
+
+@media screen and (max-width: 1125px) {
+    .intro__content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .intro__title {
+        color: #1E3240;
+        font-size: 59.309px;
+        font-weight: 700;
+
+        span {
+            width: 68px;
+            height: 30px;
+            border-radius: 336.98px;
+            border: 7.414px solid #1E3240;
+        }
+    }
+
+    .intro__img {
+        max-width: 269px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .intro__title {
+        color: #1E3240;
+        font-size: 37.068px;
+        font-weight: 700;
+
+        span {
+            width: 42.599px;
+            height: 19.041px;
+            border-radius: 210.613px;
+            border: 4.633px solid #1E3240;
+        }
+    }
+
+    .intro__img {
+        max-width: 173px;
+    }
+
+    .intro__text {
+        color: #1E3240;
+        font-size: 20px;
+        font-weight: 400;
+
+        span {
+            color: #1E3240;
+            font-size: 32px;
+            font-weight: 400;
+        }
+    }
+}

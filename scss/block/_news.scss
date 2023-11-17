@@ -1,0 +1,30 @@
+.news__title {
+    color: #100E0E;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.news__text {
+    color: #585656;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.news__container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+@media screen and (max-width:768px) {
+    .news__container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .news__title {
+        font-size: 24px;
+    }
+}

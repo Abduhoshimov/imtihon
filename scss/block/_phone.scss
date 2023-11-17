@@ -1,0 +1,98 @@
+.phone__title {
+    color: #FFF;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.phone__text {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.phone__btn {
+    max-width: 160px;
+    width: 100%;
+    height: 56px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    background: var(--prime, #0071E4);
+}
+
+.phone__img {
+    max-width: 376px;
+}
+
+.phone {
+    background-color: #000;
+}
+
+.phone__container {
+    display: flex;
+    align-items: center;
+    gap: 88px;
+}
+
+.phone__block {
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+
+@media screen and (max-width:888px) {
+    .phone__title {
+        font-size: 32px;
+    }
+
+    .phone__text {
+        font-size: 16px;
+    }
+
+    .phone__container {
+        gap: 72px;
+    }
+
+    .phone__img {
+        padding-left: 40px;
+    }
+
+    .phone__block {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:557px) {
+    .phone__block {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .phone__title {
+        white-space: nowrap;
+        font-size: 20px;
+    } 
+
+    .phone__container {
+        gap: 24px;
+    }
+
+    .phone__img {
+        max-width: 70%;
+        padding-left: 0;
+    }
+
+    .phone__container {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .phone__img {
+        max-width: 90%;
+    }
+}
